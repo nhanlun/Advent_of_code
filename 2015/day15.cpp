@@ -1,4 +1,4 @@
-#include <Eigen/Dense>
+#include <eigen3/Eigen/Dense>
 #include <boost/algorithm/string.hpp>
 #include <boost/algorithm/string/classification.hpp>
 
@@ -40,7 +40,6 @@ int main() {
         }
       }
     }
-    std::cout << i << ' ' << res << '\n';
   }
   std::cout << res << '\n';
 }
