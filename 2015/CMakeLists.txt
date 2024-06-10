@@ -22,3 +22,6 @@ add_executable(day19 day19.cpp)
 
 add_executable(day20 day20.cpp)
 target_link_libraries(day20 PUBLIC fmt::fmt)
+
+add_executable(day21 day21.cpp)
+target_link_libraries(day21 PUBLIC fmt::fmt)

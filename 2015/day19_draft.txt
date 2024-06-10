@@ -1,0 +1,29 @@
+
+w = 274 characters
+
+max step = 2 * len(w) - 1 = 547 if it is CNF context free grammar
+but we have Rn and Ar always be together
+Sometimes Y is in the sentence too
+
+
+C Rn X Ar           increase 4 - 1 = 3
+C Rn X Y X Ar       increase 6 - 1 = 5
+C Rn X Y X Y X Ar   increase 8 - 1 = 7
+
+X Rn X Ar
+X Rn X Y X Ar
+
+
+other operation increases the length by 1
+=> the length of string always increase => there is only 1 way to construct this string
+
+we can consider Y to associate with its previous X -> just - 2*Y and consider all Rn Ar to be increase 3 operation
+
+31 Rn -> 31 Ar
+-> 31 operation increases 3
+8 Y
+just - 8*2
+number of increase 1: 274 - 31 * 3 - 8 * 2 - 1 = 164
+ans = 164 + 31 = 195
+
+
